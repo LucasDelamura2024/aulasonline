@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Aula Online</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Video Aula Online</h1>
+    <div class="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+    <div class="chat-container">
+      <ul id="messages"></ul>
+      <form id="chatForm">
+        <input id="messageInput" autocomplete="off" placeholder="Digite uma mensagem..." />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
